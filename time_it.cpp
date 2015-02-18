@@ -15,6 +15,10 @@ General Public License for more details.
 
 */
 
+#ifdef _MSC_VER
+#pragma warning(disable:4996)
+#endif
+
 #include <windows.h>
 
 #include <stdio.h>
@@ -574,17 +578,17 @@ int time_it(char *device_name) {
 		printf("%7.3f%s", bucket[i]->ticksd / stats.tick_frequencyd / bucket[i]->title_divisor, sp);
 	}
 	printf("\n");
-	for (i = 0; i < opt.buckets; ++i) {
+	for (int i = 0; i < opt.buckets; ++i) {
 		char *sp = i < opt.buckets - 1 ? " " : "";
 		printf(" %s%s", bucket[i]->title, sp);
 	}
 	printf("\n");
-	for (i = 0; i < opt.buckets; ++i) {
+	for (int i = 0; i < opt.buckets; ++i) {
 		char *sp = i < opt.buckets - 1 ? " " : "";
 		printf("%s/sec%s", mb, sp);
 	}
 	printf("\n");
-	for (i = 0; i < opt.buckets; ++i) {
+	for (int i = 0; i < opt.buckets; ++i) {
 		char *sp = i < opt.buckets - 1 ? " " : "";
 		printf("-------%s", sp);
 	}
