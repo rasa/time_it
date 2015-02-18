@@ -1,0 +1,15 @@
+# Microsoft Developer Studio Generated Dependency File, included by time_it.mak
+
+.\time_it.cpp : \
+	{$(INCLUDE)}"basetsd.h"\
+	{$(INCLUDE)}"guiddef.h"\
+	{$(INCLUDE)}"propidl.h"\
+	{$(INCLUDE)}"reason.h"\
+	{$(INCLUDE)}"specstrings.h"\
+	{$(INCLUDE)}"stralign.h"\
+	{$(INCLUDE)}"tvout.h"\
+	{$(INCLUDE)}"winefs.h"\
+	{$(INCLUDE)}"getopt.h"\
+	{$(INCLUDE)}"ver_defaults.h"\
+	".\version.h"\
+	
