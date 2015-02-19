@@ -1,19 +1,4 @@
-/*
-
-$Id$
-
-Copyright (c) 2005-2006 Ross Smith II (http://smithii.com). All rights reserved.
-
-This program is free software; you can redistribute it and/or modify it
-under the terms of version 2 of the GNU General Public License
-as published by the Free Software Foundation.
-
-This program is distributed in the hope that it will be useful, but
-WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-General Public License for more details.
-
-*/
+// Copyright (c) 2005-2015 Ross Smith II. See Mit LICENSE in /LICENSE
 
 #ifdef _MSC_VER
 #pragma warning(disable:4996)
@@ -336,7 +321,7 @@ static void print_stats(int reads_made, ULONGLONG first_tick) {
 #ifdef _DEBUG
 				bucket[j]->debug = 1;
 #endif
-				bucket[j]->bytes += bytes_per_read; 
+				bucket[j]->bytes += bytes_per_read;
 				continue;
 			}
 
@@ -363,7 +348,7 @@ static void print_stats(int reads_made, ULONGLONG first_tick) {
 				bucket[j]->bytes += bytes_per_read;
 			}
 
-/* 
+/*
 
 buckets[0].ticks = 32	(0->32)
 buckets[1].ticks = 16	(0->16)
@@ -827,7 +812,7 @@ int main(int argc, char * argv[]) {
 		if (seconds >= 3600) {
 			bucket[i]->title =  "  hour";
 			bucket[i]->title_divisor = 3600;
-		} else 
+		} else
 		if (seconds >= 60) {
 			bucket[i]->title =  "minute";
 			bucket[i]->title_divisor = 60;
@@ -858,7 +843,7 @@ int main(int argc, char * argv[]) {
 		read[i]->start_tick = 0;
 		read[i]->end_tick = 0;
 	}
-	
+
 	for (i = optind; i < argc; ++i) {
 		time_it(argv[i]);
 	}
