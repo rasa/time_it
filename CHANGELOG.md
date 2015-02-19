@@ -1,5 +1,8 @@
-time_it changelog
+## 0.2 (unreleased)
 
-Version 0.1 - 07 Jan 07:
+  * Updated to Visual Studio 2013
+  * Switch to MIT license
 
-	Initial release
+## 0.1 (07 Jan 07)
+
+  * Initial release
