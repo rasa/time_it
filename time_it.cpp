@@ -781,10 +781,10 @@ int main(int argc, char * argv[]) {
 			case '?': /* -? | --help      Show this help message and quit */
 				++opt.help;
 				break;
+			case ':':
+				fprintf(stderr, "Option -%c requires an operand\n", optopt);
+				// fallthrough
 			default:
-				if (optarg) {
-					fprintf(stderr, "Invalid option: '%s'\n", optarg);
-				}
 				usage(1);
 		}
 	}
