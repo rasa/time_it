@@ -709,11 +709,6 @@ int main(int argc, char * argv[]) {
 	optind = 1;
 	int i;
 
-#ifdef _DEBUG
-	for (i = 0; i < argc; ++i) {
-		printf("argv[%d]=%s\n", i, argv[i]);
-	}
-#endif
 	while (true) {
 		long l;
 		if (optind < argc && argv[optind] && argv[optind][0] == '/')
@@ -800,7 +795,7 @@ int main(int argc, char * argv[]) {
 	int devices = argc - optind;
 
 	if (devices == 0) {
-		fprintf(stderr, "%s: No files specified", progname);
+		fprintf(stderr, "%s: No files specified\n", progname);
 		usage(1);
 	}
 
