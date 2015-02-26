@@ -1,6 +1,6 @@
-# time_it 
+# time_it [![Flattr this][flatter_png]][flatter]
 
-Time disk I/O
+Time disk I/O.
 
 ## Usage
 
@@ -10,17 +10,25 @@ To contribute to this project, please see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Bugs
 
-To view existing bugs, or report a new bug, please see the [issues](/issues) page for this project.
+To view existing bugs, or report a new bug, please see [issues](../../issues).
+
+## Changelog
+
+To view the version history for this project, please see [CHANGELOG.md](CHANGELOG.md).
 
 ## License
 
 This project is [MIT licensed](LICENSE).
 
-## Changelog
-
-Please see [CHANGELOG.md](CHANGELOG.md) for the version history for this project.
-
 ## Contact
 
-This project was originally developed by [Ross Smith II](mailto:ross@smithii.com).
-Any enhancements and suggestions are welcome.
+This project was created and is maintained by [Ross Smith II][] [![endorse][endorse_png]][endorse]
+
+Feedback, suggestions, and enhancements are welcome.
+
+[Ross Smith II]: mailto:ross@smithii.com "ross@smithii.com"
+[flatter]: https://flattr.com/submit/auto?user_id=rasa&url=https%3A%2F%2Fgithub.com%2Frasa%2Ftime_it
+[flatter_png]: http://button.flattr.com/flattr-badge-large.png "Flattr this"
+[endorse]: https://coderwall.com/rasa
+[endorse_png]: https://api.coderwall.com/rasa/endorsecount.png "endorse"
+
