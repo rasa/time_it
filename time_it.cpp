@@ -557,23 +557,24 @@ int time_it(char *device_name) {
 
 	static double kilo = opt.kilobyte ? 1024 : 1000;
 	static char * mb = opt.kilobyte ? " MB" : "MiB";
+	int i;
 
-	for (int i = 0; i < opt.buckets; ++i) {
+	for (i = 0; i < opt.buckets; ++i) {
 		char *sp = i < opt.buckets - 1 ? " " : "";
 		printf("%7.3f%s", bucket[i]->ticksd / stats.tick_frequencyd / bucket[i]->title_divisor, sp);
 	}
 	printf("\n");
-	for (int i = 0; i < opt.buckets; ++i) {
+	for (i = 0; i < opt.buckets; ++i) {
 		char *sp = i < opt.buckets - 1 ? " " : "";
 		printf(" %s%s", bucket[i]->title, sp);
 	}
 	printf("\n");
-	for (int i = 0; i < opt.buckets; ++i) {
+	for (i = 0; i < opt.buckets; ++i) {
 		char *sp = i < opt.buckets - 1 ? " " : "";
 		printf("%s/sec%s", mb, sp);
 	}
 	printf("\n");
-	for (int i = 0; i < opt.buckets; ++i) {
+	for (i = 0; i < opt.buckets; ++i) {
 		char *sp = i < opt.buckets - 1 ? " " : "";
 		printf("-------%s", sp);
 	}
