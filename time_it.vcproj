@@ -3,8 +3,8 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="time_it"
-	ProjectGUID="{29DB73D3-D4F1-4864-A540-5171782822C8}"
-	TargetFrameworkVersion="131072"
+	ProjectGUID="{36657A9B-3F42-4FC0-AA37-BD33A4D976D0}"
+	TargetFrameworkVersion="0"
 	>
 	<Platforms>
 		<Platform
@@ -240,6 +240,30 @@
 			Name="Resource Files"
 			Filter="ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe"
 			>
+			<File
+				RelativePath="time_it.ico"
+				>
+			</File>
+			<File
+				RelativePath="time_it.rc"
+				>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCResourceCompilerTool"
+						PreprocessorDefinitions=""
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCResourceCompilerTool"
+						PreprocessorDefinitions=""
+					/>
+				</FileConfiguration>
+			</File>
 		</Filter>
 	</Files>
 	<Globals>
